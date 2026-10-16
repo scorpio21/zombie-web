@@ -89,6 +89,35 @@ body {
 	text-align: center;
 	z-index: 1;
 }
+		
+/* Pantalla visible antes de que arranque el runtime de Godot. */
+body {
+    background: #02070b url('loading-backdrop.png') center center / cover no-repeat fixed;
+}
+
+#status {
+    visibility: visible;
+    background:
+        linear-gradient(180deg, rgba(1, 8, 14, 0.76), rgba(1, 5, 9, 0.88)),
+        url('loading-backdrop.png') center center / cover no-repeat;
+}
+
+#status-brand {
+    color: #dff8ff;
+    font-family: Arial, sans-serif;
+    font-size: clamp(1.5rem, 4vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 0 0 18px rgba(48, 210, 255, 0.85), 0 3px 12px #000;
+}
+
+#status-progress {
+    accent-color: #22c7ff;
+    filter: drop-shadow(0 0 8px rgba(34, 199, 255, 0.72));
+    height: 0.55rem;
+}
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="Noche de los Infectados.icon.png" />
 <link rel="apple-touch-icon" href="Noche de los Infectados.apple-touch-icon.png"/>
@@ -106,7 +135,7 @@ body {
 
 		<div id="status">
 			<img id="status-splash" class="show-image--false fullsize--true use-filter--true" src="Noche de los Infectados.png" alt="">
-			<progress id="status-progress"></progress>
+			<div id="status-brand">NOCHE DE LOS INFECTADOS</div><progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
@@ -218,4 +247,5 @@ const engine = new Engine(GODOT_CONFIG);
 		</script>
 	</body>
 </html>
+
 
