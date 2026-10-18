@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1792329835|4139485';
+const CACHE_VERSION = '1792345825|4868751';
 /** @type {string} */
 const CACHE_PREFIX = 'Noche de los Inf-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
@@ -14,7 +14,7 @@ const OFFLINE_URL = 'Noche de los Infectados.offline.html';
 const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = true;
 // Files that will be cached on load.
 /** @type {string[]} */
-const CACHED_FILES = ["index.html","Noche de los Infectados.js","Noche de los Infectados.offline.html","Noche de los Infectados.icon.png","Noche de los Infectados.apple-touch-icon.png","Noche de los Infectados.audio.worklet.js","Noche de los Infectados.audio.position.worklet.js"];
+const CACHED_FILES = ["Noche de los Infectados.html","Noche de los Infectados.js","Noche de los Infectados.offline.html","Noche de los Infectados.icon.png","Noche de los Infectados.apple-touch-icon.png","Noche de los Infectados.audio.worklet.js","Noche de los Infectados.audio.position.worklet.js"];
 // Files that we might not want the user to preload, and will only be cached on first load.
 /** @type {string[]} */
 const CACHEABLE_FILES = ["Noche de los Infectados.wasm","Noche de los Infectados.pck"];
